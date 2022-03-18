@@ -3,48 +3,96 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } */
 *{
-    margin:0%
+    margin:0%;
+}
+
+body{
+    display:flex
+
+    
 }
 .background{
 
     height:100vh;
-    width: 60vh;
+    width:80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("matthew-brindle-SBp7pmLSGso-unsplash.jpg");
-    background-size: 100vh;
+    background-image: url("pawel-czerwinski-6lQDFGOB1iw-unsplash\(1\).jpg");
+    background-size: 100%;
     float:left;
 
 }
 
 h1{
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:monospace;
+    text-shadow: 1px black;
+
 }
 
-.logobox{
-    width: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-    opacity: 0.7;
-}
-
-.forms{
-    float:left;
-    /* padding: 20px; */
+.bo{
+    color:black
     
 }
 
-#main{
+.logobox{
+    width: 80vh;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99, 152, 212);
+    opacity: 0.7;
+}
+
+div.forms{
+    float:left;
+    background-color: rgba(66, 77, 90, 0.712);
+    margin:0px;
+    padding-left: 10px;
+    border:1px solid rgb(97, 88, 88);
+    padding-top:5vh;
+    padding-bottom:5vh;
+    box-shadow:100px solid red;
+
+    /* padding: 20px; */
+    /* height:37vh; */
+    
+
+    
+}
+
+input, #create{
+
+    border-radius:3px;
+    border: 2px solid rgb(57, 51, 109);
+    padding:2px;
+
+
+}
+
+placeholder{
+    color:blueviolet;
+    
+}
+
+#create:hover{
+
+}
+
+div#main{
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:right; 
-    height:100vh;
-    border: 1px solid red;
+    height:auto;
+    width:100%;
+    background-color: rgb(57, 51, 109);
+    padding-top: 0;
+    padding-bottom:19vh;
+
+    
     
 
 }
@@ -52,19 +100,32 @@ h1{
 #sec1, #sec2, #sec3{
     display:flex;
     flex-direction: row;
+
     
+}
+
+.header{
+    height:20vh;
+    font-family:monospace;
+    font-size: large;
+    
+
 }
 
 .header, .forms, .creteacc, button{
     padding:2px;
     margin:10px;
-    border: 1px solid red
+    
 
 }
 
 label{
-    font-size: 8px;
+    font-size: 13px;
     width:20px;
-    border: 1px solid red
+    font-family:monospace;
+    
 }
 
+.rightDiv{
+    padding-left: 45px    
+}
