@@ -6,43 +6,73 @@
     margin:0%;
 }
 
+
+
 body{
     display:flex
-
+    
     
 }
-.background{
 
-    height:100vh;
-    width:80vh;
+div.background{
+
+    height:auto;
+    width:75%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("pawel-czerwinski-6lQDFGOB1iw-unsplash\(1\).jpg");
-    background-size: 100%;
+    background-size:100vh;
+    max-height: 1px;
+    max-width: 60vh; 
+    padding-bottom: 100vh;
     float:left;
-
+    overflow: hidden;
 }
 
-h1{
-    color: black;
-    font-family:monospace;
-    text-shadow: 1px black;
 
-}
+@media only screen and (max-width: 700px) {
+    div.background{
+        background-size: 10px;
 
-.bo{
-    color:black
+    }
+    .logobox{
+        content:"ERROR";
+    }
+   
     
 }
 
-.logobox{
-    width: 80vh;
-    height: 7vh;
-    display: flex;
+img{
+    height: 100px;
+    
+}
+
+/* .bo{
+    color:rgb(243, 0, 0);
+    display:flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(99, 152, 212);
+    position:sticky
+    
+} */
+
+svg{
+    opacity: 1.0;
+}
+
+
+
+.biggerbox > .logobox{
+    display: flex; 
+    flex-direction: column;
+    width:100vh;
+    height: auto;
+    margin-top: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 240, 240);
     opacity: 0.7;
 }
 
@@ -54,10 +84,7 @@ div.forms{
     border:1px solid rgb(97, 88, 88);
     padding-top:5vh;
     padding-bottom:5vh;
-    box-shadow:100px solid red;
-
-    /* padding: 20px; */
-    /* height:37vh; */
+    /* margin-bottom: 52vh; */
     
 
     
@@ -69,12 +96,22 @@ input, #create{
     border: 2px solid rgb(57, 51, 109);
     padding:2px;
 
-
 }
 
-placeholder{
-    color:blueviolet;
-    
+
+#create{
+    width:30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 87px;
+    box-sizing: border-box;
+
+}
+input{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 
 #create:hover{
@@ -85,7 +122,7 @@ div#main{
     display:flex;
     flex-direction: column;
     justify-content:center;
-    align-items:right; 
+    align-items:right;
     height:auto;
     width:100%;
     background-color: rgb(57, 51, 109);
@@ -97,6 +134,10 @@ div#main{
 
 }
 
+/* input[type=text]:focus {
+    background-color: lightblue;
+  } */
+
 #sec1, #sec2, #sec3{
     display:flex;
     flex-direction: row;
@@ -105,9 +146,12 @@ div#main{
 }
 
 .header{
-    height:20vh;
+    /* height:20h; */
+    /* margin-bottom: 20px; */
+    line-height: 160%;
     font-family:monospace;
-    font-size: large;
+    font-size:0.5cm;    
+    
     
 
 }
@@ -116,8 +160,11 @@ div#main{
     padding:2px;
     margin:10px;
     
+    
+
 
 }
+
 
 label{
     font-size: 13px;
@@ -128,4 +175,8 @@ label{
 
 .rightDiv{
     padding-left: 45px    
+}
+#create:hover{
+    background-color: rgb(84, 80, 122);
+
 }
